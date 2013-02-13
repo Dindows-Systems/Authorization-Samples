@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/27/trunk/OpenIDConsumer/Plugins/Discovery
+END
+XRDS.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/36/trunk/OpenIDConsumer/Plugins/Discovery/XRDS.cs
+END
+HTML.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/27/trunk/OpenIDConsumer/Plugins/Discovery/HTML.cs
+END
+Yadis.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/27/trunk/OpenIDConsumer/Plugins/Discovery/Yadis.cs
+END

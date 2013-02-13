@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenAuthentication", "TokenAuthentication\TokenAuthentication.csproj", "{A225623E-E11C-4CFE-B8C4-F98EC34AFC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenAuthenticationSampleWeb", "TokenAuthenticationSampleWeb\TokenAuthenticationSampleWeb.csproj", "{A20AC174-2172-4D54-B83D-B43A95D4900A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A225623E-E11C-4CFE-B8C4-F98EC34AFC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A225623E-E11C-4CFE-B8C4-F98EC34AFC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A225623E-E11C-4CFE-B8C4-F98EC34AFC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A225623E-E11C-4CFE-B8C4-F98EC34AFC41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20AC174-2172-4D54-B83D-B43A95D4900A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20AC174-2172-4D54-B83D-B43A95D4900A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20AC174-2172-4D54-B83D-B43A95D4900A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20AC174-2172-4D54-B83D-B43A95D4900A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

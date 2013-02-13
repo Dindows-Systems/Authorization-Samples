@@ -1,0 +1,81 @@
+﻿<%@ Master Language="VB" CodeFile="Site.master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Forms Authentication, Authorization, and User Accounts</title>
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+
+        <form id="form1" runat="server">
+        
+            <div id="header">
+                <span class="title">User Account Tutorials</span><br />
+                
+                <span class="breadcrumb">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                </span>
+            </div>
+        
+            <div id="content">
+                <asp:contentplaceholder id="MainContent" runat="server">
+                  <!-- Page-specific content will go here... -->
+                </asp:contentplaceholder>
+            </div>
+            
+            <div id="navigation">
+                <asp:ContentPlaceHolder ID="LoginContent" runat="server">
+                    <asp:LoginView ID="LoginView1" runat="server">
+                        <LoggedInTemplate>
+                            Welcome back,
+                            <asp:LoginName ID="LoginName1" runat="server" />.
+                            <br />
+                            <asp:HyperLink ID="lnkUpdateSettings" runat="server" NavigateUrl="~/Membership/AdditionalUserInfo.aspx">Update Your Settings</asp:HyperLink>
+                        </LoggedInTemplate>
+                        <AnonymousTemplate>
+                            Hello, stranger.
+                        </AnonymousTemplate>
+                    </asp:LoginView>
+                    <br />
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Logout.aspx" />
+                    
+                    <br /><br />
+                </asp:ContentPlaceHolder>
+                
+                <ul>
+                    <li>
+                        <asp:HyperLink runat="server" ID="lnkHome" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                    </li>  
+                    <asp:Repeater runat="server" ID="menu" DataSourceID="SiteMapDataSource1">
+                        <ItemTemplate>
+                            <li>
+                                <asp:HyperLink ID="lnkMenuItem" runat="server" NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>
+                                
+                                <asp:Repeater ID="submenu" runat="server" DataSource="<%# CType(Container.DataItem, SiteMapNode).ChildNodes %>">
+                                    <HeaderTemplate>
+                                        <ul>
+                                    </HeaderTemplate>
+                                    <ItemTemplate>
+                                        <li>
+                                            <asp:HyperLink ID="lnkMenuItem" runat="server" NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>
+                                        </li>
+                                    </ItemTemplate>
+                                    <FooterTemplate>
+                                        </ul>
+                                    </FooterTemplate>
+                                </asp:Repeater>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Flash Web</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="body">
+    <!-- top shadow start -->
+	<div id="topShadow"></div>
+	<!-- top shadow end -->
+	<!-- body pannel start -->
+	<div id="bodyPannel">
+	    <h2><span>about us</span></h2>
+		<p>We provide day to day statistics about the internet usage. WE provide different graphs and charts with the help of which one can know his/her productivity.</p>
+				
+		<a href="#" title="read more" class="more">read more</a><br class="spacer" />
+		
+		<div id="colorBg">
+		    <div id="futurePlans">
+			    <h2 class="text1">Register <span>yourself!!</span> </h2>
+										
+				<div id="newsLetter">
+				    <span class="nltop"></span>
+					<form method="post" action="#" name="newsletter" class="newsLetter">
+      				    <h2 class="text2">Site <span>signup</span></h2>
+						<label>User Name</label>
+						<input name="username" type="text" id="txtUsername" />
+						
+						<label>Password</label>
+						<input name="password" type="password" id="txtPassword" /><br />
+							
+						<label>your fullname</label>
+						<input name="fullname" type="text" id="txtFullname" /><br />
+
+						<label>your email id</label>
+						<input name="email" type="text" id="txtEmail" /><br />
+						
+						<input name="signup" type="submit" class="submit" id="signup" value="signup" title="Signup" />
+						<br class="spacer" />
+					</form><br class="spacer" />
+					<span class="nlbottom"></span>
+				</div>
+			</div>
+			<div id="contact">
+			    <span class="ctop"></span>
+				<form method="post" action="#" name="newsletter" class="contact">
+				    <h2 class="text3">contact <span>form</span></h2>
+					<label>your name</label><input name="contactname" type="text" id="contactname" />
+					<label>phone no</label><input name="phno" type="text" id="phno" />
+					<label>email id</label><input name="contactemail" type="text" id="contactemail" />
+					<label>comments</label><textarea name="comments" cols="20" rows="10" id="comments"></textarea>
+					<br class="spacer" />
+					<input name="submit" type="submit" class="submit" id="submit" value="submit" title="Signup" />
+					<input name="reset" type="reset" class="reset" id="reset" value="reset" title="Reset" />
+				</form><br class="spacer" />
+				<span class="cbottom"></span>
+    		</div>
+		</div>
+	</div>
+	<div id="bottomShadow"></div><br class="spacer" />
+	</div>
+	<!-- body pannel end -->
+	<!-- top shadow start -->		
+	
+	<!-- bottom shadow end -->
+	<!-- footer start -->
+	<div id="footer"><br class="spacer" />
+		<a href="http://validator.w3.org/check?uri=referer" target="_blank" title="XHTML Validation" class="xhtml">xhtml</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" title="CSS Validation" class="css">css</a>
+		<ul>
+			<li><a href="#" title="Home" class="hover">Home</a>|</li>
+			<li><a href="#" title="About Us">About Us</a>|</li>
+			<li><a href="#" title="Support">Support</a>|</li>
+			<li><a href="#" title="Works">Works</a>|</li>
+			<li><a href="#" title="Ideas">Ideas</a>|</li>
+			<li><a href="#" title="Profits">Profits</a>|</li>
+			<li><a href="#" title="Contact">Contact</a></li>
+		</ul><br class="spacer" />
+	  <p class="tworld">Designed By : Vashishtha,Roojuta & Darshita</p>
+	</div>
+	<!-- footer end -->	
+</body>
+</html>

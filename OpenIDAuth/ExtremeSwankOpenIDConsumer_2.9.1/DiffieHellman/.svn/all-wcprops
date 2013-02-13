@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/27/trunk/OpenIDConsumer/DiffieHellman
+END
+DHParameters.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/27/trunk/OpenIDConsumer/DiffieHellman/DHParameters.cs
+END
+DHKeyGeneration.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/27/trunk/OpenIDConsumer/DiffieHellman/DHKeyGeneration.cs
+END
+DiffieHellmanManaged.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/27/trunk/OpenIDConsumer/DiffieHellman/DiffieHellmanManaged.cs
+END
+DiffieHellman.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/27/trunk/OpenIDConsumer/DiffieHellman/DiffieHellman.cs
+END

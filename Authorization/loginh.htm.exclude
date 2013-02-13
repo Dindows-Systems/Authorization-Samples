@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Flash Web</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<!-- top navigation start -->
+	<div id="topNav">
+		<a href="loginh.htm" title="Flash Web"><img src="images/logo_text.gif" alt="Flash Web" width="179" height="35" border="0" /></a>
+		<ul>
+			<li><a href="#" title="Home" class="hover">Home</a></li>
+			<li><a href="#" title="About us">About Us</a></li>
+			<li><a href="#" title="Support">Support</a></li>
+			<li><a href="#" title="Works">Works</a></li>
+			<li><a href="#" title="Ideas">Ideas</a></li>
+			<li><a href="#" title="Profits">Profits</a></li>
+			<li><a href="#" title="Contact">Contact</a></li>
+		</ul>
+	</div>
+	<!-- top navigation end -->
+	<!-- body start -->
+	<div id="body">
+		<!-- top shadow start -->
+		<div id="topShadow"></div>
+		<!-- top shadow end -->
+		<!-- body pannel start -->
+		<div id="bodyPannel">
+			<!-- login form start-->
+			<form method="post" action="#" name="login" class="search">
+			    <h2>members <span>area</span></h2>
+			    <label>your name</label><input name="name" type="text" id="name" />
+			    <label>password</label><input name="password" type="password" id="password" />
+			    <p>remember my password</p><input name="" type="checkbox" value="" class="check" /><input name="login" type="submit" id="login" value="login" title="Login" class="submit" />
+			</form>
+			<!-- login form end-->
+		    <div id="eventLink">
+			    <h2>events <span>links</span></h2>
+			    <ul>
+				    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscingelit. </a></li>
+				    <li><a href="#">Dolor lectus sollicitudineu, condimentum eu,tinciduntsit </a></li>
+				    <li><a href="#">Ametenim. Mauris nunc felis dignissi iddapibus nec, </a></li>
+				    <li><a href="#">Eorem ipsum dolor sit amet,</a></li>
+			    </ul>
+			    <a href="#" title="read more" class="more">read more</a>
+		    </div>
+		    <br class="spacer" />
+		    <div id="midle"></div>
+	    </div>
+    </div>
+</body>
+</html>	   
+		

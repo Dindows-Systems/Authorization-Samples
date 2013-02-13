@@ -1,0 +1,8 @@
+a:link { font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline; color: #0000FF; font-size: 10pt; }
+a:visited { font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline; color: #0000FF; font-size: 10pt; }
+a:hover { font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline; color: #FF6600; font-size: 10pt; }
+a:active { font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline; color: #0000FF; font-size: 10pt; }
+td { padding-left:4; padding-right:4; }
+.tblMain { border-left:1px solid #b0bec7; border-right:1px solid #b0bec7; border-top:1px solid #b0bec7; border-bottom:1px solid #b0bec7; }
+.Treb10Blue { font-family: "Trebuchet MS"; font-size: 10pt; font-weight: bold; font-style: italic; color: #000080; }
+.button { font-family: Arial; font-size: 9pt; font-weight: bold; }

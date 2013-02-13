@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/34/trunk/OpenIDConsumer/mono
+END
+ConfidenceFactor.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/27/trunk/OpenIDConsumer/mono/ConfidenceFactor.cs
+END
+PrimalityTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/27/trunk/OpenIDConsumer/mono/PrimalityTests.cs
+END
+PrimeGeneratorBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/34/trunk/OpenIDConsumer/mono/PrimeGeneratorBase.cs
+END
+BigInteger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/27/trunk/OpenIDConsumer/mono/BigInteger.cs
+END
+SequentialSearchPrimeGeneratorBase.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/27/trunk/OpenIDConsumer/mono/SequentialSearchPrimeGeneratorBase.cs
+END
+NextPrimeFinder.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/27/trunk/OpenIDConsumer/mono/NextPrimeFinder.cs
+END
+SecurityParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/27/trunk/OpenIDConsumer/mono/SecurityParser.cs
+END
+MiniParser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/27/trunk/OpenIDConsumer/mono/MiniParser.cs
+END

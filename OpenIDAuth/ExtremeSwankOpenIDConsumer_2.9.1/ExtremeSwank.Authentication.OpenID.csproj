@@ -1,0 +1,119 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CB75F6C-2312-4E23-8701-1BD642A4E31C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExtremeSwank.Authentication.OpenID</RootNamespace>
+    <AssemblyName>ExtremeSwank.Authentication.OpenID</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>ExtremeSwank.Authentication.OpenID.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>ExtremeSwank.Authentication.OpenID.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthorizationMode.cs" />
+    <Compile Include="ConsumerBase.cs" />
+    <Compile Include="DiffieHellman\DHKeyGeneration.cs" />
+    <Compile Include="DiffieHellman\DHParameters.cs" />
+    <Compile Include="DiffieHellman\DiffieHellman.cs" />
+    <Compile Include="DiffieHellman\DiffieHellmanManaged.cs" />
+    <Compile Include="Errors.cs" />
+    <Compile Include="ErrorStore.cs" />
+    <Compile Include="GlobalPersister.cs" />
+    <Compile Include="IDiscovery.cs" />
+    <Compile Include="IExtension.cs" />
+    <Compile Include="IXRDSConsumer.cs" />
+    <Compile Include="KeyEncryption.cs" />
+    <Compile Include="mono\BigInteger.cs" />
+    <Compile Include="mono\ConfidenceFactor.cs" />
+    <Compile Include="mono\MiniParser.cs" />
+    <Compile Include="mono\NextPrimeFinder.cs" />
+    <Compile Include="mono\PrimalityTests.cs" />
+    <Compile Include="mono\PrimeGeneratorBase.cs" />
+    <Compile Include="mono\SecurityParser.cs" />
+    <Compile Include="mono\SequentialSearchPrimeGeneratorBase.cs" />
+    <Compile Include="OpenIDConsumer.cs" />
+    <Compile Include="OpenIDUser.cs" />
+    <Compile Include="Plugins\Discovery\HTML.cs" />
+    <Compile Include="Plugins\Discovery\XRDS.cs" />
+    <Compile Include="Plugins\Discovery\Yadis.cs" />
+    <Compile Include="Plugins\Extensions\AuthenticationPolicy.cs" />
+    <Compile Include="Plugins\Extensions\AuthenticationURI.cs" />
+    <Compile Include="Plugins\Extensions\SimpleRegistration.cs" />
+    <Compile Include="Plugins\Extensions\SimpleRegistrationFields.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ProtocolVersion.cs" />
+    <Compile Include="RequestedMode.cs" />
+    <Compile Include="SessionPersister.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

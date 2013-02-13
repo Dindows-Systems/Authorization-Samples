@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="TokenAuthenticationSampleWeb.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div>
+		<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/">Home</asp:HyperLink> | 
+		<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/meetings/">Meetings</asp:HyperLink> | 
+		<asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/meetings/help/">Meetings Help</asp:HyperLink> | 
+		<asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/admin/">Administration</asp:HyperLink> | 
+		<asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/admin/help/">Admin Help</asp:HyperLink> | 
+		<asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/help.aspx">Help</asp:HyperLink>
+		<span id="LogOutSpan" runat="server" visible="false">
+			| <asp:LinkButton ID="LogOutLink" runat="server" OnClick="LogOutLink_OnClick">Log Out</asp:LinkButton>
+		</span>
+    </div>
+    
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

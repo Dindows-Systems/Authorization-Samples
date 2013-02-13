@@ -1,0 +1,17 @@
+﻿body {
+font-family:Verdana;
+font-size:11px;
+color:gray;
+line-height:16px;
+margin-left:100px;
+width:500px;
+}
+
+h1 {
+font-size:14px;
+margin:30px 0;
+}
+
+#exMessage {
+color:#C00;
+}

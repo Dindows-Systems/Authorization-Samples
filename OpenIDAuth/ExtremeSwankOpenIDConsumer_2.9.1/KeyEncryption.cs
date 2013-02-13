@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ExtremeSwank.Authentication.OpenID
+{
+    /// <summary>
+    /// Represents the encryption type used during key exchange.
+    /// </summary>
+    public enum KeyEncryption
+    {
+        /// <summary>
+        /// No encryption used during key exchange operation.
+        /// </summary>
+        None,
+        /// <summary>
+        /// Diffie-Hellman key exchange will be used, and data will be
+        /// signed using SHA1.
+        /// </summary>
+        DHSHA1,
+        /// <summary>
+        /// Diffie-Hellman key exchange will be used, and data will be
+        /// signed using SHA256.
+        /// </summary>
+        DHSHA256
+    };
+}
